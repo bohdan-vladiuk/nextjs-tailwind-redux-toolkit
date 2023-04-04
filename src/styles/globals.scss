@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border p-0 m-0;
+  }
+
+  html,
+  body {
+    @apply max-w-[100vw] overflow-x-hidden dark:text-white dark:bg-slate-700;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  li {
+    @apply mb-3;
+  }
+}
+
+@layer utilities {
+  .dark-text-white {
+    @apply dark:text-white;
+  }
+}
